@@ -42,7 +42,7 @@ export const MenuList = () => {
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()} >
                             Inicio
                         </NavigationMenuLink>
                     </Link>
@@ -57,7 +57,7 @@ export const MenuList = () => {
                                         className="flex  w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                         href="/"
                                     >
-                                        <div className="mb-2 text-lg font-medium">
+                                        <div className="mb-2 text-lg font-semibold">
                                             Institucional
                                         </div>
                                         <p className="text-sm leading-tight text-muted-foreground">
@@ -82,6 +82,13 @@ export const MenuList = () => {
                     <Link href="/docs" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Noticias
+                        </NavigationMenuLink>
+                    </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                    <Link href="/docs" legacyBehavior passHref>
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            Galeria
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
