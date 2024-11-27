@@ -2,7 +2,7 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
 
-import { Card, CardContent } from "@/components/ui/card"
+//import { Card, CardContent } from "@/components/ui/card"
 import {
     Carousel,
     CarouselContent,
@@ -10,7 +10,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { useRouter } from "next/router"
+//import { useRouter } from "next/router"
 
 export function CarouselDef() {
 
@@ -51,7 +51,7 @@ export function CarouselDef() {
             className="w-full max-w-6xl"
         >
             <CarouselContent>
-                {dataCarousel.map(({ id, title, description, link }) => (
+                {dataCarousel.map(({ id, title, description }) => (
 
                     <CarouselItem key={id}>
 

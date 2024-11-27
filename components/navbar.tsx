@@ -4,7 +4,7 @@ import { MenuList } from "./menu-list"
 import { ItemsMenuMobile } from "./items-menu-mobile"
 
 export const Navbar = () => {
-    const router = useRouter()
+    //const router = useRouter()
     return (
         <>
             <nav className="bg-[#FFE3A7] dark:bg-[#FFE3A7]">
