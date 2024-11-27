@@ -1,6 +1,8 @@
 import React from 'react'
+import { CarouselDef } from './carousel-def'
 
 export const MainPage = () => {
+
     return (
         <>
             <img className="w-full mx-auto" src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics pictures/qrv2t1en7vylcvlvfmqh.jpg" alt="imagen portada ipv tucuman instituto provincial de vivienda" />
@@ -26,6 +28,13 @@ export const MainPage = () => {
                         </div>
                     </a>
                 </div>
+                <h2 className=" text-5xl font-bold tracking-tight mt-32 text-gray-900">Noticias</h2>
+                <div className='flex justify-center'>
+                    <CarouselDef />
+                </div>
+                <h2 className="mb-10 text-5xl font-bold tracking-tight text-gray-900">Programas Especiales</h2>
+                <h2 className=" text-5xl font-bold tracking-tight text-gray-900">Obras</h2>
+
             </div>
         </>
     )
