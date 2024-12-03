@@ -1,6 +1,13 @@
-import React from 'react'
+"use client"
+import { useGetCategory } from "@/api/getCategory"
+import { ResponseType } from "@/types/response"
+import { useParams, useRouter } from "next/navigation"
+import { FiltersControlsCategory } from "./components/filters-controls-category"
 
 export default function Page() {
+    const { result, loading }: ResponseType = useGetCategory('entregas')
+    const router = useRouter()
+    console.log(result)
     return (
 
         <>
@@ -14,8 +21,11 @@ export default function Page() {
                             <img src="https://res.cloudinary.com/dncvxpgj1/image/upload/v1714050217/IPV/nzce7ilwvxwc5u1mcmu0.png" className="h-7 mr-2" alt="" />
                             <h3 className="text-lg w-64 mb-5" >Información de interes</h3>
                         </div>
-                        <h4 className="font-extrabold mb-5">Entregas</h4>
+                        {result !== null && !loading && (
+                            <h4 className="font-extrabold mb-5">{result.length > 0 ? result[0].category.name : 'No hay categorías disponibles'}</h4>
+                        )}
                         <ul className="mb-5">
+                            <FiltersControlsCategory />
                         </ul>
                         <h4 className="font-extrabold mb-5">Institucionales</h4>
                         <ul className="mb-5">
@@ -30,7 +40,7 @@ export default function Page() {
                         <div className="  overflow-hidden mb-5">
                             <div className="md:flex md:flex-row-reverse">
                                 <div className="max-w-xs md:h-56 h-auto ml-9 mb-5 md:mb-0 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                                    <img className="rounded-t-lg " src="<%= noticia.coverimage[0].webp %>" alt="" />
+                                    <img className="rounded-t-lg " src="" alt="" />
                                 </div>
                                 <div className=" max-w-xs md:max-w-5xl md:p-4 ml-9 md:ml-0">
                                     <h5 className="text-xl  font-black mb-2"></h5>
