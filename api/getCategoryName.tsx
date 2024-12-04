@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-export function useGetProductField() {
-    const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/noticias?populate=*`;
+export function useGetCategoryName() {
+    const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/categories?populate=*`;
     const [result, setResult] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
