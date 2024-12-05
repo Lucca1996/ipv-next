@@ -3,7 +3,6 @@
 import { useGetNoticiaBySlug } from "@/api/getNoticiaBySlug"
 import { NoticiaType } from "@/types/noticia";
 import { ResponseType } from "@/types/response"
-import { Fragment_Mono } from "next/font/google";
 import { useParams } from "next/navigation"
 
 export default function Page() {
@@ -16,7 +15,7 @@ export default function Page() {
         <>
             <img className="w-full mx-auto" src="https://ipvtuc.gob.ar/web/wp-content/uploads/2023/12/pagina-WEB-fotoencabezado-noticias.png" alt="" />
             {result != null && result.map((noticia: NoticiaType) => {
-                const { titulo, slug, subtitulo, fecha, imagenPrincipal, contenido, category, descripcion } = noticia;
+                const { titulo, fecha, imagenPrincipal, contenido, category, descripcion } = noticia;
                 return (
                     <>
                         <div className="max-w-screen-xl flex-wrap items-end justify-between mx-auto mt-32 mb-20 p-4">
