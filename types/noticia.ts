@@ -14,7 +14,14 @@ export type NoticiaType = {
         url: string;
 
     }[];
+    imagenPrincipal: {
+
+        id: number;
+        url: string;
+
+    };
     category: {
+        name: string;
         data: {
             attributes: {
                 slug: string;

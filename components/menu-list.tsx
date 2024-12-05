@@ -66,13 +66,13 @@ export const MenuList = () => {
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/docs" title="Mision">
+                            <ListItem href="/institucional/mision" title="Mision">
                                 Estas son nuestras bases y metas.
                             </ListItem>
-                            <ListItem href="/docs/installation" title="Autoridades">
+                            <ListItem href="/institucional/autoridades" title="Autoridades">
                                 Quienes componen la cabeza del instituto.
                             </ListItem>
-                            <ListItem href="/docs/primitives/typography" title="Organigrama">
+                            <ListItem href="/institucional/organigrama" title="Organigrama">
                                 Asi nos organizamos.
                             </ListItem>
                         </ul>
@@ -86,7 +86,7 @@ export const MenuList = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/galeria" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Galeria
                         </NavigationMenuLink>
