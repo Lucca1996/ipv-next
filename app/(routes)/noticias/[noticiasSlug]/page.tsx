@@ -4,18 +4,19 @@ import { useGetNoticiaBySlug } from "@/api/getNoticiaBySlug"
 import { NoticiaType } from "@/types/noticia";
 import { ResponseType } from "@/types/response"
 import { useParams } from "next/navigation"
+import { NoticiaGallery } from "./components/gallery";
 
 export default function Page() {
     const params = useParams();
     const { noticiasSlug } = params;
     const { result }: ResponseType = useGetNoticiaBySlug(noticiasSlug)
-    console.log(result)
+
     return (
 
         <>
             <img className="w-full mx-auto" src="https://ipvtuc.gob.ar/web/wp-content/uploads/2023/12/pagina-WEB-fotoencabezado-noticias.png" alt="" />
             {result != null && result.map((noticia: NoticiaType) => {
-                const { titulo, fecha, imagenPrincipal, contenido, category, descripcion } = noticia;
+                const { titulo, fecha, imagenPrincipal, contenido, category, descripcion, imagenes } = noticia;
                 return (
                     <>
                         <div className="max-w-screen-xl flex-wrap items-end justify-between mx-auto mt-32 mb-20 p-4">
@@ -59,13 +60,8 @@ export default function Page() {
                                     <p className="text-7xl">40</p>
                                 </div>
                             </div>
-                            <div className="grid md:grid-cols-5 grid-cols-2 mb-28" id="contenedorFotos">
 
-                                <div className="image">
-                                    <img src="" alt="" className="md:h-96 w-96 object-cover cursor-pointer hover:scale-110 transition-transform duration-500 ease-in-out" />
-                                </div>
-
-                            </div>
+                            <NoticiaGallery />
                             <div className="aspect-video mt-8 hidden" id="contenedorVideos">
 
                                 <h2 className="md:mt-24 md:ml-24 font-bold md:text-6xl">Aun no se han cargado videos en esta noticia...</h2>
