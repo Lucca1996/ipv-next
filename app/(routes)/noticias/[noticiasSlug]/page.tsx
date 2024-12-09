@@ -44,7 +44,7 @@ export default function Page() {
 
                         <section className="">
                             <div className="bg-[#FFB81A] md:flex pt-24">
-                                <div className="md:ml-80 ml-5 mr-5 md:mr-0">
+                                <div className="md:ml-40 ml-5 mr-5 md:mr-0">
                                     <p className=" font-medium max-w-4xl text-xl whitespace-pre-wrap">{contenido}</p>
 
                                     <h2 className="mt-32 mb-8 font-bold text-7xl">Galería</h2>
