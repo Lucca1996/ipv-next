@@ -13,7 +13,6 @@ export default function Page() {
     const params = useParams();
     const { noticiasSlug } = params;
     const { result }: ResponseType = useGetNoticiaBySlug(noticiasSlug);
-    console.log(result);
 
     const [showGallery, setShowGallery] = useState(true);
 
