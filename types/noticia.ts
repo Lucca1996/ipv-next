@@ -14,6 +14,12 @@ export type NoticiaType = {
         url: string;
 
     }[];
+    videos: {
+
+        id: number;
+        url: string;
+
+    }[];
     imagenPrincipal: {
 
         id: number;
