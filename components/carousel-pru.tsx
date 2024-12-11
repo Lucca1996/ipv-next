@@ -14,12 +14,10 @@ import { useGetFeatured } from "@/api/useGetFeatured"
 import { ResponseType } from "@/types/response"
 import { SkeletonSchema } from "./skeletonSchema"
 import { NoticiaType } from "@/types/noticia"
-import { useRouter } from "next/navigation"
 
 export function CarouselPru() {
 
     const { loading, result }: ResponseType = useGetFeatured();
-    const router = useRouter();
 
     return (
         <Carousel
