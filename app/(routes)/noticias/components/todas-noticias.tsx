@@ -5,7 +5,6 @@ import { ResponseType } from "@/types/response"
 
 export const ListaNoticias = () => {
     const { result, loading }: ResponseType = useGetProductField()
-    console.log(result)
     return (
         <div className="md:flex md:flex-col-reverse">
             {loading && (
