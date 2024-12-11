@@ -74,7 +74,7 @@ export function CarouselPru() {
                 }
             </CarouselContent>
             <CarouselPrevious />
-            <CarouselNext />
+            <CarouselNext className="hidden md:flex" />
         </Carousel>
     )
 }
