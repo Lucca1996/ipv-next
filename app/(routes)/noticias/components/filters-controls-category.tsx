@@ -13,8 +13,9 @@ export const FiltersControlsCategory = ({ category }: FiltersControlsCategoryPro
             {result != null && result.map((noticia: NoticiaType) => {
                 const { titulo, slug } = noticia;
                 return (
-                    <li key={slug}>
+                    <li className="mb-2 hover:bg-slate-50" key={slug}>
                         <a href={`/noticias/${slug}`}>{titulo}</a>
+                        <hr />
                     </li>
                 );
             })}
