@@ -38,7 +38,7 @@ export const MainPage = () => {
                 <h2 className=" text-5xl font-bold tracking-tight text-gray-900">Obras</h2>
 
                 <div className=" md:mb-36 bg-[#FFB81A] md:h-2/4">
-                    <div className="md:flex max-w-screen-xl justify-between mx-auto mt-32 px-4 py-10">
+                    <div className="lg:flex justify-items-center max-w-screen-xl justify-between mx-auto mt-32 px-4 py-10">
 
                         <img className="md:w-96" src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/pdiayc2ihedrzpdq3dhx.jpg" alt="imagen obras ipv tucuman instituto provincial de vivienda" />
                         <img className="md:w-96" src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/kfx5rtprkxlnawtsp76u.jpg" alt="imagen obras ipv tucuman instituto provincial de vivienda" />

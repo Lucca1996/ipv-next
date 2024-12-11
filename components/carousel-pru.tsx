@@ -37,14 +37,14 @@ export function CarouselPru() {
                 )}
                 {result != null && (
                     result.map((noticia: NoticiaType) => {
-                        const { imagenes, id, titulo, subtitulo, fecha, slug } = noticia
+                        const { id, titulo, subtitulo, fecha, slug, imagenPrincipal } = noticia
                         return (
 
                             <CarouselItem key={id}>
 
                                 <div className="flex-wrap items-end  justify-between mx-auto mt-20 mb-28 ">
                                     <div className=" md:flex bg-gray-300">
-                                        <img className=" md:w-2/3" src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${imagenes[0].url}`} alt="image featured" />
+                                        <img className=" md:w-2/3" src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${imagenPrincipal.url}`} alt="image featured" />
                                         <div className="sm:w-80">
                                             <h2 className="hidden md:block ml-12 mt-5 font-semibold">Noticia principal</h2>
                                             <h2 className="ml-12 mt-5 md:mb-24 font-light">{fecha}</h2>

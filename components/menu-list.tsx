@@ -18,19 +18,19 @@ import {
 const components: { title: string; href: string; description: string }[] = [
     {
         title: "Requisitos para empadronarse",
-        href: "/docs/primitives/alert-dialog",
+        href: "/tramites/requisitos",
         description:
             "Requisitos y documentacion.",
     },
     {
         title: "Transferencia de Vivienda",
-        href: "/docs/primitives/hover-card",
+        href: "/tramites/transferencia",
         description:
             "Requisitos y documentacion.",
     },
     {
         title: "Guía de tramites",
-        href: "/docs/primitives/progress",
+        href: "https://guiadetramites.tucuman.gob.ar/tematica/950/vivienda.html",
         description:
             "Pagina de tramites del gobierno de la ciudad.",
     },
