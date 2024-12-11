@@ -17,7 +17,7 @@ export const Footer = () => {
                         </p>
                     </div>
                     <div >
-                        <a href="#" className=" items-center align-top  ">
+                        <a href="https://minobrastuc.gob.ar/" className=" items-center align-top  ">
                             <img src="https://res.cloudinary.com/djlsm2fwz/image/upload/IPV/statics%20pictures/mjxqnlyyozbilgftecxk.jpg" className="hidden md:block h-15" alt="ipv Logo" />
 
                         </a>
