@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import { CarouselInst } from "../mision/components/carouselInst";
 
 export default function Page() {
     return (
@@ -59,30 +60,8 @@ export default function Page() {
                     </div>
                 </div>
 
-
-                <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
-                    defer></script>
-                <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
-                />
-
-                <div className="swiffy-slider mb-28">
-                    <ul className="slider-container">
-                        <li><img src="https://res.cloudinary.com/dncvxpgj1/image/upload/v1715180644/IPV/qmxv1kkj7t2iceisbflt.png"
-                            className="max-w-full h-auto" alt="slider institucional ipv" /></li>
-                        <li><img src="https://res.cloudinary.com/dncvxpgj1/image/upload/v1715180645/IPV/bdbg7nl5vggntdwn1pnt.png"
-                            className="max-w-full h-auto" alt="slider institucional ipv" /></li>
-                    </ul>
-
-                    <button type="button" className="slider-nav"></button>
-                    <button type="button" className="slider-nav slider-nav-next"></button>
-
-                    <div className="slider-indicators">
-                        <button className="active"></button>
-                        <button></button>
-                        <button></button>
-                    </div>
-                </div>
             </div>
+            <CarouselInst />
         </>
     )
 }

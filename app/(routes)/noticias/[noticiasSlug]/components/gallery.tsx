@@ -74,21 +74,21 @@ export const NoticiaGallery = () => {
                         ))}
                         {imgPop && selectedImg !== null && (
                             <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-85 z-50 flex justify-center items-center gap-3">
-                                <a href="#" className="absolute top-10 right-14" onClick={closeImagePop}>
+                                <a href="#" className="absolute top-10 md:right-14 right-50" onClick={closeImagePop}>
                                     <img
                                         src="https://static-00.iconduck.com/assets.00/window-close-icon-256x256-zj9yhiet.png"
                                         alt="Cerrar"
                                         className="max-w-[30px] max-h-[10vh] object-contain"
                                     />
                                 </a>
-                                <a href="#" className="absolute right-28" onClick={goToNextImage}>
+                                <a href="#" className="absolute md:right-28 right-0" onClick={goToNextImage}>
                                     <img
                                         src="https://cdn-icons-png.flaticon.com/512/11181/11181468.png"
                                         alt="Next"
                                         className="max-w-[40px] max-h-[10vh] object-contain"
                                     />
                                 </a>
-                                <a href="#" className="absolute left-28 rotate-180" onClick={goToPreviousImage}>
+                                <a href="#" className="absolute md:left-28 left-0 rotate-180" onClick={goToPreviousImage}>
                                     <img
                                         src="https://cdn-icons-png.flaticon.com/512/11181/11181468.png"
                                         alt="Previous"
