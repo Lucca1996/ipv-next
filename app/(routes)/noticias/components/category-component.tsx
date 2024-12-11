@@ -2,6 +2,7 @@
 import { useGetCategoryName } from "@/api/getCategoryName"
 import { ResponseType } from "@/types/response"
 import { FiltersControlsCategory } from "./filters-controls-category"
+import { SkeletonSchema } from "@/components/skeletonSchema"
 
 export const CategoryBoard = () => {
     const { result, loading }: ResponseType = useGetCategoryName()
@@ -10,11 +11,14 @@ export const CategoryBoard = () => {
     const actosPublicos = result !== null && !loading && (result[2].name);
     return (
         <div className="md:block hidden">
+
             <div className="flex mb-0">
                 <img src="https://res.cloudinary.com/dncvxpgj1/image/upload/v1714050217/IPV/nzce7ilwvxwc5u1mcmu0.png" className="h-7 mr-2" alt="" />
                 <h3 className="text-lg w-64 mb-5" >Información de interes</h3>
             </div>
-
+            {loading && (
+                <SkeletonSchema grid={3} />
+            )}
             <h4 className="font-extrabold mb-5">{entregas}</h4>
             <FiltersControlsCategory category="entregas" />
             {result !== null && !loading && (

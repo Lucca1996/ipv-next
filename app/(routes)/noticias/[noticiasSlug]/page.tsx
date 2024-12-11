@@ -7,12 +7,13 @@ import { useParams } from "next/navigation";
 import { NoticiaGallery } from "./components/gallery";
 import { useState } from "react";
 import DefaultPlayer from "next-video/player";
+import { SkeletonBigSchema } from "@/components/skeletonBigSchema";
 
 
 export default function Page() {
     const params = useParams();
     const { noticiasSlug } = params;
-    const { result }: ResponseType = useGetNoticiaBySlug(noticiasSlug);
+    const { result, loading }: ResponseType = useGetNoticiaBySlug(noticiasSlug);
 
     const [showGallery, setShowGallery] = useState(true);
 
@@ -27,6 +28,13 @@ export default function Page() {
                 src="https://ipvtuc.gob.ar/web/wp-content/uploads/2023/12/pagina-WEB-fotoencabezado-noticias.png"
                 alt=""
             />
+            <div className="max-w-screen-xl flex-wrap items-end justify-between mx-auto  mb-20 p-4">
+                {
+                    loading && (
+                        <SkeletonBigSchema grid={5} />
+                    )
+                }
+            </div>
             {result != null &&
                 result.map((noticia: NoticiaType) => {
                     const {
@@ -38,8 +46,10 @@ export default function Page() {
                         descripcion,
                         videos,
                     } = noticia;
+
                     return (
                         <>
+
                             <div className="max-w-screen-xl flex-wrap items-end justify-between mx-auto mt-32 mb-20 p-4">
                                 <h5 className="mb-10 text-5xl font-bold tracking-tight text-gray-900">
                                     {titulo}

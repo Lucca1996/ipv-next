@@ -1,4 +1,5 @@
 import { useGetProductField } from "@/api/getProductField"
+import { SkeletonBigSchema } from "@/components/skeletonBigSchema"
 import { NoticiaType } from "@/types/noticia"
 import { ResponseType } from "@/types/response"
 
@@ -7,6 +8,9 @@ export const ListaNoticias = () => {
     console.log(result)
     return (
         <div className="md:flex md:flex-col-reverse">
+            {loading && (
+                <SkeletonBigSchema grid={5} />
+            )}
             {result != null && result.map((noticia: NoticiaType) => {
                 const { titulo, slug, subtitulo, fecha, imagenPrincipal } = noticia;
                 return (
