@@ -11,7 +11,7 @@ import {
 
 export const ItemsMenuMobile = () => {
     return (
-        <Popover>
+        <Popover aria-label="Menu">
             <PopoverTrigger>
                 <Menu />
             </PopoverTrigger>
