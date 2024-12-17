@@ -146,7 +146,7 @@ export default function Page() {
                                             ))
                                         ) : (
                                             <h2 className="md:mt-24 md:mb-96 md:ml-24 font-bold md:text-6xl">
-                                                Aun no se han cargado videos en esta noticia...
+                                                Aùn no se han cargado videos en esta noticia...
                                             </h2>
                                         )}
                                     </div>
