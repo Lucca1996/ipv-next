@@ -1,9 +1,17 @@
 
+import Image from 'next/image'
+
 export const Mantenimiento = () => {
     return (
         <section >
             <div className="min-h-screen flex flex-col justify-center items-center">
-                <img src="https://www.svgrepo.com/show/426192/cogs-settings.svg" alt="Logo" className="mb-8 h-40" />
+                <Image 
+                    src="https://www.svgrepo.com/show/426192/cogs-settings.svg" 
+                    alt="Logo" 
+                    className="mb-8" 
+                    width={160} 
+                    height={160} 
+                />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-700 dark:text-white mb-4">Este sitio se encuentra en produccion</h1>
                 <p className="text-center text-gray-500 dark:text-gray-300 text-lg md:text-xl lg:text-2xl mb-8">Estamos trabajando para mejorar esta seccion de la pagina!</p>
                 <div className="flex space-x-4">

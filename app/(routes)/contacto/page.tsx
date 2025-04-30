@@ -1,8 +1,16 @@
+import Image from 'next/image'
+
 export default function Page() {
     return (
         <>
             <section className="" id="contact">
-                <img className="w-full mx-auto" src="https://ipvtuc.gob.ar/web/wp-content/uploads/2024/02/pagina-WEB-foto-encabezado-institucional.png" alt="imagen portada ipv tucuman instituto provincial de vivienda" />
+                <Image 
+                    className="w-full mx-auto" 
+                    src="https://ipvtuc.gob.ar/web/wp-content/uploads/2024/02/pagina-WEB-foto-encabezado-institucional.png" 
+                    alt="imagen portada ipv tucuman instituto provincial de vivienda" 
+                    width={1920}
+                    height={600}
+                />
 
                 <div className="max-w-screen-xl flex-wrap items-end justify-between mx-auto mt-20 mb-40 p-4">
                     <div className="mb-4">

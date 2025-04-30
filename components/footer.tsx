@@ -1,4 +1,6 @@
 
+import Image from 'next/image';
+
 export const Footer = () => {
     return (
         <footer className=" rounded-lg shadow m-4 mt-4">
@@ -6,8 +8,13 @@ export const Footer = () => {
                 <div className="sm:flex sm:justify-between">
                     <div >
                         <a href="#" className="items-center align-top">
-                            <img src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/y3m4bwyjdnmirx4swdre.jpg" className="hidden md:block h-15" alt="ipv Logo" />
-
+                            <Image
+                                src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/y3m4bwyjdnmirx4swdre.jpg"
+                                className="hidden md:block h-15"
+                                alt="IPV Logo"
+                                width={450}
+                                height={120}
+                            />
                         </a>
                         <p className="mt-5">Idelfonso de las Muñecas 455 – T4000IKI <br />
                             San Miguel de Tucumán – Tucumán – Argentina <br />
@@ -18,8 +25,13 @@ export const Footer = () => {
                     </div>
                     <div >
                         <a href="https://minobrastuc.gob.ar/" className=" items-center align-top  ">
-                            <img src="https://res.cloudinary.com/djlsm2fwz/image/upload/IPV/statics%20pictures/mjxqnlyyozbilgftecxk.jpg" className="hidden md:block h-15" alt="ipv Logo" />
-
+                            <Image
+                                src="https://res.cloudinary.com/djlsm2fwz/image/upload/IPV/statics%20pictures/mjxqnlyyozbilgftecxk.jpg"
+                                className="hidden md:block h-15"
+                                alt="Ministerio de Obras Logo"
+                                width={450}
+                                height={120}
+                            />
                         </a>
                         <div className="text-4xl md:justify-end flex">
                             <p className="mt-5 pr-7 text-lg md:text-3xl">Call Center</p>

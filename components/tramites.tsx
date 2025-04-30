@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export const Tramites = () => {
     return (
         <div className="container flex justify-center space-x-20">
@@ -6,15 +8,19 @@ export const Tramites = () => {
                 className="group text-center"
             >
                 <div className="image-container">
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/vnncweww0rltgxs85f9k.jpg"
                         alt="Imagen impresora ipv original"
                         className="original-image mx-auto w-16 mb-3 group-hover:hidden"
+                        width={64}
+                        height={64}
                     />
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/wlhh0wgv16ymup71m3xe.jpg"
                         alt="Imagen impresora ipv al hacer hover"
                         className="hover-image mx-auto w-16 mb-3 hidden group-hover:block"
+                        width={64}
+                        height={64}
                     />
                     <h3 className="font-extrabold text-2xl mb-3 text-center">
                         Imprimir Boleta
@@ -31,15 +37,19 @@ export const Tramites = () => {
                 className="group text-center"
             >
                 <div className="image-container">
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics%20pictures/slvuu9ssn5bivlpyhlqb.jpg"
                         alt="Imagen nota ipv original"
                         className="original-image mx-auto w-16 mb-3 group-hover:hidden"
+                        width={64}
+                        height={64}
                     />
-                    <img
+                    <Image
                         src="https://res.cloudinary.com/djlsm2fwz/image/upload/f_webp/IPV/statics pictures/cbcgbzwg2u7y8tm6ujpe.jpg"
                         alt="Imagen nota ipv al hacer hover"
                         className="hover-image mx-auto w-16 mb-3 hidden group-hover:block"
+                        width={64}
+                        height={64}
                     />
                     <h3 className="font-extrabold text-2xl mb-3 text-center">
                         Inscripción
